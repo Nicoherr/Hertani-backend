@@ -16,7 +16,6 @@ public class Postulante {
     @Column(nullable = false, unique = true)
     private String correo;
 
-    @Column(nullable = false)
     private String telefono;
 
     @Column(nullable = false)
@@ -31,6 +30,9 @@ public class Postulante {
     @Column(nullable = false)
     private String linkedinUrl;
 
+    private String disponibilidad;
+    private String certificaciones;
+    private String cvUri;
     private String cvNombre;
 
     @Enumerated(EnumType.STRING)
@@ -68,6 +70,15 @@ public class Postulante {
 
     public String getLinkedinUrl() { return linkedinUrl; }
     public void setLinkedinUrl(String linkedinUrl) { this.linkedinUrl = linkedinUrl; }
+
+    public String getDisponibilidad() { return disponibilidad; }
+    public void setDisponibilidad(String disponibilidad) { this.disponibilidad = disponibilidad; }
+
+    public String getCertificaciones() { return certificaciones; }
+    public void setCertificaciones(String certificaciones) { this.certificaciones = certificaciones; }
+
+    public String getCvUri() { return cvUri; }
+    public void setCvUri(String cvUri) { this.cvUri = cvUri; }
 
     public String getCvNombre() { return cvNombre; }
     public void setCvNombre(String cvNombre) { this.cvNombre = cvNombre; }
